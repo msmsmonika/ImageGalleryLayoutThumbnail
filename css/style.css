@@ -1,0 +1,82 @@
+body
+{
+	background:#eee;
+	font-family:sans-serif;
+}
+.galDivWrap {
+    width: 70%;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    background: #fff;
+}
+.galDivWrap>h2
+{
+	text-align: center;
+	font-weight: normal;
+}
+.rowOfGridWrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.thumbDiv {
+    width: 29%;
+    position: relative;
+    overflow: hidden;
+    /* top: 0; */
+    display: block;
+    float: left;
+    height: 150px;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+.imgDiv {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+.imgDiv>img {
+    width: 100%;
+    height: 150px;
+}
+span.text {
+    position: absolute;
+    z-index: 2;
+    height: 70px;
+    background: rgba(25, 24, 24, 0.67);
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+		bottom:-100px;
+		-moz-transition: all 0.3s ease-in;
+-ms-transition: all 0.3s ease-in;
+-webkit-transition: all 0.3s ease-in;
+-o-transition: all 03s ease-in;
+		/*bottom:-400px
+
+		-moz-transition: bottom 1.5s ease-in;
+-ms-transition: bottom 1.5s ease-in;
+-webkit-transition: bottom 1.5s ease-in;
+-o-transition: bottom 1.5s ease-in;*/
+}
+.text>h2 {
+	font-size: 1.1em;
+	margin: 5%;
+	margin-bottom: 0;
+	padding: 0;
+	font-weight: normal;
+}
+.text>p {
+	font-size: 0.7em;
+margin: 5%;
+margin-top: 2%;
+}
+.thumbDiv:hover>.text
+{
+	  bottom:0px;
+}
